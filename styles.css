@@ -1,0 +1,218 @@
+/* Sparrow */
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Background color */
+  display: flex; /* Flexbox for body */
+  flex-direction: column; /* Align content vertically */
+  min-height: 100vh; /* Ensure it takes at least full height */
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #333; /* Changed background color */
+  padding: 10px 0;
+  text-align: center;
+  position: relative; /* Changed to relative to avoid fixed position */
+  width: 100%;
+  color: #fff; /* Text color */
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+footer #footer-content p {
+  margin: 0;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+  background: linear-gradient(to right, #4CAF50, #45a049); /* Green gradient */
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+.nav-bar ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar ul li {
+  margin: 0 15px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-bar ul li a:hover {
+  color: #FFD700;
+  transform: scale(1.05);
+}
+
+/* Main Content Styles */
+main {
+  padding: 2rem;
+  text-align: center;
+  flex-grow: 1; /* Ensures the main content takes the remaining space */
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Course Section Styles */
+.course-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course {
+  width: calc(20% - 20px);
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.course:hover {
+  transform: translateY(-10px);
+}
+
+.course button {
+  background-color: #f44336; /* Red button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.course input[type="text"] {
+  width: 50px;
+  margin: 5px 0;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Total Price Section Styles */
+.total-price-section {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.total-price-section button {
+  background-color: #2196F3; /* Blue button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Form and Input Styles */
+input[type="email"], 
+input[type="password"], 
+input[type="submit"], 
+input[type="text"], 
+button {
+  font-size: 16px;
+  padding: 8px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"], button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #0b79d0;
+}
+
+/* Page Name Section */
+.page-name h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+/* Teacher Section Styles */
+.teacher-section {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content */
+  margin-bottom: 20px;
+}
+
+.teacher-section img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 50%; /* Optional: makes the image circular */
+}
+
+.teacher-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.teacher-info p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Search Bar */
+input[type="text"] {
+  width: calc(100% - 4em);
+  padding: 0.5em;
+  margin-bottom: 2em;
+}
